@@ -1,0 +1,4 @@
+#Ignore Following Files
+
+.vscode/
+env/
