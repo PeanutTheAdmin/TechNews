@@ -1,3 +1,3 @@
 # Tech-Doc
-This app is for Technology Documentation.
+This app is for Technology News.
 </br>
