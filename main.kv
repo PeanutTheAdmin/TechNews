@@ -1,0 +1,22 @@
+#:kivy 2.0.0
+
+<MyGridLayout>
+    latest_news: root.latest_news
+    
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: 'News'
+            TextInput:
+                text: root.latest_news
+                readonly: True
+    
+        Button:
+            text: 'Refresh'
+            on_press: root.pressed()
+            background_normal: ''
+            background_color:(0,0,1,0.4)
