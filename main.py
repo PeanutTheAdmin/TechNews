@@ -32,7 +32,6 @@ class MyGridLayout(Widget):
             print(output)
         except:
             self.latest_news = ('No Data or Wrong Spelling')
-    pass
 
 
 class TechApp(App):
