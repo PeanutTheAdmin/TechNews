@@ -4,12 +4,16 @@ import kivy
 kivy.require('2.0.0')
 from kivy.app import App
 from kivy.uix.widget import Widget
+from kivy.uix.scrollview import ScrollView
 import kivy.properties as kvprop
 from kivy.lang import Builder
 import requests
 from bs4 import BeautifulSoup as bs
 
 Builder.load_file('main.kv')
+
+class MyScrollView(ScrollView):
+    pass
 
 class MyGridLayout(Widget):
 

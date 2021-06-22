@@ -11,9 +11,12 @@
 
             Label:
                 text: 'News'
-            TextInput:
-                text: root.latest_news
-                readonly: True
+            MyScrollView:
+                TextInput:
+                    size_hint: 1, None
+                    height: self.minimum_height
+                    text: root.latest_news
+                    readonly: True
     
         Button:
             text: 'Refresh'
