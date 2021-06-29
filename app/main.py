@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+Required Modules:
+    pip install kivy
+    pip install requests
+    pip install bs4
+"""
+
 import kivy
 kivy.require('2.0.0')
 from kivy.app import App
