@@ -8,6 +8,7 @@ Required Modules:
 """
 
 import kivy
+from requests.api import head
 kivy.require('2.0.0')
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -29,16 +30,15 @@ class MyGridLayout(Widget):
     def pressed(self):
         try:
 
-            url = ('https://www.bleepingcomputer.com/')
+            url = ('https://www.jacobcavaness.com/')
 
             d = requests.get(url)
             soup = bs(d.content , 'html.parser')
             article_title = soup.title.text
-            article = soup.find('div', class_ = 'bc_latest_news_text')
-            headline = article.h4.a.text
-            headline_text = article.p.text
+            article = soup.find('p')
+            headline_text = article.text
 
-            output = self.latest_news = (f'Website Title: {article_title}\n\nHeadline: {headline}\n\nHeadline Text: {headline_text}')
+            output = self.latest_news = (f'Website Title: {article_title}\n\nHeadline Text: {headline_text}')
             
             print(output)
         except:
