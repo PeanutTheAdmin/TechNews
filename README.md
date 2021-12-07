@@ -1,2 +1,2 @@
 # Tech News
-This is my first simple kivy app that gets the latest article from bleepingcomputer.com.
+This is my first simple kivy app that gets the text from the website www.jacobcavaness.com
